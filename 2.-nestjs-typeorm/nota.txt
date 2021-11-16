@@ -1,0 +1,41 @@
+Nest Building Blocks
+------------------------------
+Modules
+Controllers
+Services
+Interceptors
+Pipes
+Guards
+
+Instaladores
+---------------------------------
+npm i -g @nestjs/cli
+nest --help
+nest new project-name
+
+npm install class-validator
+npm install class-transformer
+npm install --save @nestjs/swagger swagger-ui-express
+npm install --save @nestjs/typeorm typeorm mysql
+
+Errores en camino
+-----------------------------
+npm i rxjs@^7
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'molina125';
+
+Comandos
+-----------------------------------------
+npm run start:dev => para ejecutar
+
+nest generate module post => para crear un module
+nest g mo post
+nest g co post --no-spec => creando un controller 
+nest g s post --no-spec => creando un servicio (no-spec => no crea el archivo de pruebas unitarias)
+
+
+Documentacion
+---------------------------------------------
+https://docs.nestjs.com/openapi/introduction => @nestjs/swagger swagger-ui-express
+
+database => https://docs.nestjs.com/techniques/database
+
