@@ -1,0 +1,5 @@
+MongoDB
+----------------------------------
+npm install mongoose
+npm install @nestjs/mongoose
+npm install @types/mongoose -D  => (facilita la escritura)
