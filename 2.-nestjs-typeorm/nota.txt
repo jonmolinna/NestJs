@@ -17,6 +17,9 @@ npm install class-validator
 npm install class-transformer
 npm install --save @nestjs/swagger swagger-ui-express
 npm install --save @nestjs/typeorm typeorm mysql
+npm install bcryptjs
+npm install @types/bcryptjs -D
+npm install @nestjs/config
 
 Errores en camino
 -----------------------------
@@ -32,10 +35,16 @@ nest g mo post
 nest g co post --no-spec => creando un controller 
 nest g s post --no-spec => creando un servicio (no-spec => no crea el archivo de pruebas unitarias)
 
+nest g mo user
+nest g co user --no-spec
+nest g s user --no-spec
+nest g class user/dtos/createUser.dto --no-spec => creando un dto
+nest g class user/dtos/editUser.dto --no-spec
+nest g class user/entities/user.entity --no-spec
+
 
 Documentacion
 ---------------------------------------------
 https://docs.nestjs.com/openapi/introduction => @nestjs/swagger swagger-ui-express
 
 database => https://docs.nestjs.com/techniques/database
-
