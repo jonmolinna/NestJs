@@ -20,6 +20,11 @@ npm install --save @nestjs/typeorm typeorm mysql
 npm install bcryptjs
 npm install @types/bcryptjs -D
 npm install @nestjs/config
+npm install --save @nestjs/passport passport passport-local
+npm install --save-dev @types/passport-local
+npm install @nestjs/jwt
+npm install passport-jwt
+npm install @types/passport-jwt -D
 
 Errores en camino
 -----------------------------
@@ -42,9 +47,16 @@ nest g class user/dtos/createUser.dto --no-spec => creando un dto
 nest g class user/dtos/editUser.dto --no-spec
 nest g class user/entities/user.entity --no-spec
 
+nest g mo auth
+nest g s auth --no-spec
+nest g co auth --no-spec
+
 
 Documentacion
 ---------------------------------------------
 https://docs.nestjs.com/openapi/introduction => @nestjs/swagger swagger-ui-express
 
 database => https://docs.nestjs.com/techniques/database
+
+
+--------------------------------> 

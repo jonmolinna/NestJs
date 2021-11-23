@@ -4,6 +4,7 @@ import { INestApplication } from '@nestjs/common';
 export const initSwagger = (app: INestApplication) => {
   const SwaggerConfig = new DocumentBuilder()
     .setTitle('MyBlog API')
+    .addBearerAuth() // Para documentacion
     .setDescription(
       'Esta es una API creada con NestJS con un CRUD básico para un Blog.',
     )
