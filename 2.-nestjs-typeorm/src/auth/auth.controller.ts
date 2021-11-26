@@ -1,9 +1,10 @@
-import { Controller, Get, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
 
-import { LocalAuthGuard, JwtAuthGuard } from './guards';
+import { LocalAuthGuard } from './guards';
 import { User, Auth } from 'src/common/decorators';
 import { User as UserEntity } from 'src/user/entities';
 import { AuthService } from './auth.service';
+import { LoginDto } from './dtos/login.dto';
 
 @Controller('auth')
 export class AuthController {
@@ -11,7 +12,7 @@ export class AuthController {
 
   @UseGuards(LocalAuthGuard)
   @Post('login')
-  async login(@User() user: UserEntity) {
+  async login(@Body() loginDto: LoginDto, @User() user: UserEntity) {
     const data = await this.authService.login(user);
     return {
       message: 'Login exitoso',

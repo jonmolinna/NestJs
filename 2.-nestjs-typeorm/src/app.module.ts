@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { AccessControlModule } from 'nest-access-control';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -14,6 +15,7 @@ import {
   DATABASE_USERNAME,
 } from './config/constants';
 import { AuthModule } from './auth/auth.module';
+import { roles } from './app.roles';
 
 @Module({
   imports: [
@@ -37,6 +39,7 @@ import { AuthModule } from './auth/auth.module';
       isGlobal: true,
       envFilePath: '.env',
     }),
+    AccessControlModule.forRoles(roles),
     PostModule,
     UserModule,
     AuthModule,

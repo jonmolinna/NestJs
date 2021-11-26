@@ -3,6 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreatePostDto, EditPostDto } from './dtos';
 import { Post } from './entities/post.entity';
+import { User } from 'src/user/entities';
 
 @Injectable()
 export class PostService {
@@ -12,6 +13,16 @@ export class PostService {
 
   async getMany(): Promise<Post[]> {
     return await this.postRepository.find();
+  }
+
+  async getById(id: number, author?: User) {
+    const post = await this.postRepository
+      .findOne(id)
+      .then((p) => (!author ? p : !!p && author.id === p.author.id ? p : null));
+    if (!post) {
+      throw new NotFoundException('Post does not exist or Unauthorized');
+    }
+    return post;
   }
 
   async getOne(id: number): Promise<Post> {
