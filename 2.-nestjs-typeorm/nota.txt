@@ -26,6 +26,7 @@ npm install @nestjs/jwt
 npm install passport-jwt
 npm install @types/passport-jwt -D
 npm install nest-access-control => para roles
+npm install @hapi/joi -D
 
 Errores en camino
 -----------------------------
@@ -52,6 +53,8 @@ nest g mo auth
 nest g s auth --no-spec
 nest g co auth --no-spec
 
+rm -rf dist => permite eliminar carpetas
+
 
 Documentacion
 ---------------------------------------------
@@ -60,4 +63,14 @@ https://docs.nestjs.com/openapi/introduction => @nestjs/swagger swagger-ui-expre
 database => https://docs.nestjs.com/techniques/database
 
 Link => https://github.com/ruslanguns/nestjs-myblog
---------------------------------> 3:01:05
+
+
+npm run start:dev => desarrollo
+
+
+Heroku
+-----------------------------------------
+capacidad 5M
+
+heroku --help
+heroku apps

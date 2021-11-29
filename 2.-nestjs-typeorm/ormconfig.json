@@ -1,0 +1,23 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "molina125",
+  "database": "typeorm_crud",
+  "entities": [
+    "C:\\Users\\LENOVO\\Desktop\\NestJs\\2.-nestjs-typeorm\\dist\\**\\**\\*entity{.ts,.js}"
+  ],
+  "autoLoadEntities": true,
+  "migrationsRun": true,
+  "migrations": [
+    "C:\\Users\\LENOVO\\Desktop\\NestJs\\2.-nestjs-typeorm\\dist\\migration\\**\\*{.ts,.js}"
+  ],
+  "migrationsTableName": "migrations_typeorm",
+  "cli": {
+    "migrationsDir": "src/migration"
+  },
+  "synchronize": false,
+  "logging": true,
+  "logger": "file"
+}
