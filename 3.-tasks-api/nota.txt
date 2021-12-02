@@ -1,0 +1,14 @@
+nest --help
+
+Comandos
+-----------------------------------------
+nest g controller libros --no-spec
+nest g service libros --no-spec
+
+Installer
+----------------------------------------
+npm install --save @nestjs/mongoose mongoose
+
+Errores en camino
+-----------------------------
+npm i rxjs@^7
