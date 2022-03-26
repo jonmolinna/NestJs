@@ -1,0 +1,42 @@
+npm install uuid
+npm install @types/uuid
+npm install class-validator
+npm install class-transformer
+
+Comandos
+---------------------------------------
+nest g module summary
+nest g controller summary
+nest g service summary
+
+nest g module report
+nest g controller report
+nest g service report
+
+Expense App
+---------------------------------
+Controllers
+Services
+DTOS
+Interceptores  => 
+Modules
+Pipes
+
+NestJs Entities
+-----------------------------------------
+Controller
+Modules
+Services
+Guards
+Data Transfer Objects
+
+Controller => Permite crear rutas (Endpoints = apis).
+Service => Logica de Negocio (validar datos, insert, update, delete, list).
+Module => 
+            - agrega dependencias
+            - Importan los controllers
+        providers => Se suministra los servicios que queremos utilizar dentro de este module.
+Guards =>
+Data Transfer Objects (dto) =>
+
+// 2:57:00
