@@ -1,0 +1,18 @@
+Graphql (crud usando comandos)
+------------------------------------
+1. nest g res employee
+2. Graphql (code first)
+3. Would you like to generate CRUD entry points? y
+
+Instalando Paquetes
+----------------------------------------------------------
+npm i @nestjs/graphql @nestjs/apollo graphql apollo-server-express
+npm i @nestjs/typeorm typeorm pg
+
+Comando
+---------------------------------------
+nest g module employee
+nest g s employee --no-spec
+nest g r employee --no-spec
+
+nest g res project
