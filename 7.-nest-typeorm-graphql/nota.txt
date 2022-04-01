@@ -1,0 +1,17 @@
+nest g module pets
+nest g service pets
+nest g resolver pets
+
+Automatizar los procesos
+--------------------------------------------------
+nest g resource owners
+    - Graphql (code first)
+    - Would you like to generate CRUD entry points? (y/n) => y
+
+
+
+npm i @nestjs/graphql @nestjs/apollo graphql apollo-server-express
+npm i @nestjs/typeorm typeorm pg
+npm i class-validator class-transformer
+
+npm i typeorm@0.2.41
