@@ -1,0 +1,40 @@
+Temas
+------------------------------------------------
+User signup with password hashing
+protect with JWT
+username / password logins
+
+Comandos
+----------------------------------------------
+nest g resource users
+GraphQL (code first)
+would you like to generate CRUD entry points? (y/n) Y
+
+nest g module auth
+nest g service auth
+nest g resolver auth
+
+Install
+---------------------------------------------------------------------------
+npm i @nestjs/graphql @nestjs/apollo graphql apollo-server-express
+npm install --save @nestjs/passport passport passport-local
+npm install --save-dev @types/passport-local
+npm install @nestjs/jwt passport-jwt
+npm install --save-dev @types/passport-jwt
+npm install bcrypt
+
+
+-- graphql@^15
+
+Modulos
+-----------------------------------------------------------------------------
+providers => permite usar servicios en nuestras controladores.
+controllers => son las rutas que ocupa este modulo.
+imports => cuando quieres ocupar modulos de terceros o reotilizar modulos. (solo modulos)
+exports => cuando nuestro modulo exponga algunos servicios.
+
+
+
+Tarea
+---------------------------------------------------------------------
+Ver video de passport passport-local
