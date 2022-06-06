@@ -1,0 +1,33 @@
+Injectable => es un decorador que anota una clase que se pueden inyectar a cualquier a cualquier proveedor
+
+nest g controller customers/controllers/customers
+
+nest generate module customers
+nest generate controller customers
+nest generate service customers
+
+nest generate module users
+nest generate controller users
+nest generate service users
+
+nest generate module auth
+nest generate controller auth
+nest generate service auth
+
+Install
+------------------------------------------
+npm i --save class-validator class-transformer
+npm install --save @nestjs/typeorm typeorm mysql2
+npm i bcrypt
+npm i @types/bcrypt
+npm install --save @nestjs/passport passport passport-local
+npm install --save-dev @types/passport-local
+npm install express-session
+npm install @types/express-session -D
+
+Guardar datos en la session como carrito de compras
+-------------------------------------------------------
+npm i connect-typeorm@latest
+npm i connect-typeorm@1.0.1
+
+@Injectable => es un metodo que permite usar la funcion en cualquier modulo
